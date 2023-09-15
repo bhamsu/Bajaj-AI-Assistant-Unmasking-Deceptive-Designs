@@ -1,0 +1,73 @@
+MEDICAL BILLING INVOICE
+
+PATIENT INFORMATION
+
+PERSCRIBING PHYSICIAN'S INFORMATION
+
+Kemba Hara
+
+(Or Alanah Gomes
+
+(SSS) 598 S999
+
+(55S) Sos S000
+
+11 Rosarwood Dnve,
+
+107 Trope Sree,
+
+Collingwood, NY 32580
+
+Nerw Yorh, NY 45568,
+
+INVOICE NUMBER
+
+DATE
+
+INVOICE DUE DATE
+
+Amount DUE
+
+12245
+
+07/01/23
+
+07/30/23
+
+$1,745.00
+
+ITEM
+
+DESCRIPTION
+
+Full Check Up.
+
+Full body check up
+
+$745.00
+
+Car & Theos! fxamination
+
+Infection check due lo inflammation
+
+$1,000.00
+
+NOTES
+
+‘sua TOTAL
+
+$745.00
+
+for an acure throat nfeenon
+
+A pravengt on hat been wrtan out for pat ant,
+
+TAK RATE
+
+wax
+
+$187.05
+
+TOTAL
+
+$1,902.05
