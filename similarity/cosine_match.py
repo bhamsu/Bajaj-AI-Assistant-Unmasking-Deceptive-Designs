@@ -26,7 +26,8 @@ class CosineSimilarity:
             similarity_percentage = similarity[0][0] * 100
             return similarity_percentage
         except TypeError as e:
-            print("Something went wrong!!", e)
+            print("Something went wrong!!")
+            print(e)
 
         return 0
 
