@@ -1,0 +1,187 @@
+{ "sample": [
+    {"text": "John Smith had an appointment with Dr. Emily Johnson on June 15, 2023. You can reach him at (555) 123-4567.",
+     "entities": [{"start":0, "end":9, "tag":"PERSON"}, {"start":35, "end":51, "tag":"DOCTOR"}, {"start":55, "end":68, "tag":"DATE"}, {"start":80, "end":94, "tag":"PHONE"}]},
+
+    {"text": "Sarah Davis received a prescription from her physician, Dr. Michael Anderson, on August 5, 2023. Her contact number is (987) 654-3210.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":62, "end":79, "tag":"DOCTOR"}, {"start":83, "end":96, "tag":"DATE"}, {"start":112, "end":125, "tag":"PHONE"}]},
+
+     {"text": "Amit Kumar, 123 Main Street, New Delhi, 110001.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":12, "end":31, "tag":"ADDRESS"}, {"start":33, "end":39, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Priya Patel, 456 Park Road, Mumbai, 400001.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":12, "end":28, "tag":"ADDRESS"}, {"start":30, "end":36, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Robert Lee was admitted to the hospital on March 10, 2023, under the care of Dr. Susan Roberts. His phone number is (111) 222-3333.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":68, "end":81, "tag":"DOCTOR"}, {"start":85, "end":98, "tag":"DATE"}, {"start":114, "end":127, "tag":"PHONE"}]},
+
+    {"text": "Lisa Johnson's health checkup with Dr. David Wilson is scheduled for September 20, 2023. You can contact her at (777) 888-9999.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":50, "end":63, "tag":"DOCTOR"}, {"start":67, "end":80, "tag":"DATE"}, {"start":96, "end":109, "tag":"PHONE"}]},
+
+    {"text": "Pooja Gupta, 567 Oak Road, Agra, 282001.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":12, "end":25, "tag":"ADDRESS"}, {"start":27, "end":33, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Rahul Jain, 890 Park Street, Kanpur, 208001.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":12, "end":28, "tag":"ADDRESS"}, {"start":30, "end":36, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Geeta Reddy, 123 Hillside Lane, Jaipur, 302021.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":33, "tag":"ADDRESS"}, {"start":35, "end":41, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Alok Kapoor, 456 Lakeview Avenue, Mumbai, 400601.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":32, "tag":"ADDRESS"}, {"start":34, "end":40, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Anita Yadav, 789 Pine Street, Pune, 411021.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":12, "end":26, "tag":"ADDRESS"}, {"start":28, "end":34, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Alice Miller underwent a medical test on May 8, 2023, as ordered by Dr. Richard Davis. Her phone number is (444) 555-6666.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":72, "end":86, "tag":"DOCTOR"}, {"start":90, "end":103, "tag":"DATE"}, {"start":119, "end":132, "tag":"PHONE"}]},
+
+    {"text": "During his visit to Dr. Linda Martinez on July 3, 2023, Mark Turner provided his contact information as (333) 999-8888.",
+     "entities": [{"start":26, "end":40, "tag":"PERSON"}, {"start":54, "end":68, "tag":"DOCTOR"}, {"start":72, "end":85, "tag":"DATE"}, {"start":101, "end":114, "tag":"PHONE"}]},
+
+     {"text": "Rajesh Singh, 789 Lakeview Avenue, Bangalore, 560001.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":35, "tag":"ADDRESS"}, {"start":37, "end":43, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Anjali Gupta, 101 Green Lane, Kolkata, 700001.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":14, "end":27, "tag":"ADDRESS"}, {"start":29, "end":35, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Suresh Verma, 234 Hillside Road, Hyderabad, 500001.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":14, "end":30, "tag":"ADDRESS"}, {"start":32, "end":38, "tag":"POSTAL_CODE"}]},
+
+    {"text": "The appointment with Dr. Susan Brown is set for September 12, 2023. Please call (222) 777-5555 for confirmation.",
+     "entities": [{"start":26, "end":38, "tag":"DOCTOR"}, {"start":54, "end":67, "tag":"DATE"}, {"start":83, "end":96, "tag":"PHONE"}]},
+
+    {"text": "Amy White's prescription from Dr. James Adams, dated October 7, 2023, can be refilled. Contact her at (123) 456-7890.",
+     "entities": [{"start":0, "end":9, "tag":"PERSON"}, {"start":32, "end":45, "tag":"DOCTOR"}, {"start":51, "end":64, "tag":"DATE"}, {"start":80, "end":93, "tag":"PHONE"}]},
+
+    {"text": "After her surgery on April 25, 2023, by Dr. Karen Clark, Jane Johnson can be reached at (555) 987-6543.",
+     "entities": [{"start":34, "end":46, "tag":"PERSON"}, {"start":62, "end":75, "tag":"DOCTOR"}, {"start":79, "end":92, "tag":"DATE"}, {"start":108, "end":121, "tag":"PHONE"}]},
+
+    {"text": "Arjun Patel, 890 Oak Avenue, Thane, 400601.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":28, "tag":"ADDRESS"}, {"start":30, "end":36, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Neha Mehta, 987 Park Lane, Ludhiana, 141001.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":12, "end":27, "tag":"ADDRESS"}, {"start":29, "end":35, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Vijay Kumar, 123 Forest Road, Madurai, 625001.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":12, "end":28, "tag":"ADDRESS"}, {"start":30, "end":36, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Rina Verma, 456 Cedar Avenue, Allahabad, 211001.",
+     "entities": [{"start":0, "end":9, "tag":"PERSON"}, {"start":11, "end":28, "tag":"ADDRESS"}, {"start":30, "end":36, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Santosh Sharma, 789 Pine Lane, Noida, 201301.",
+     "entities": [{"start":0, "end":13, "tag":"PERSON"}, {"start":15, "end":29, "tag":"ADDRESS"}, {"start":31, "end":37, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Dr. Robert Smith will perform surgery on June 30, 2023. His contact number is (999) 333-2222.",
+     "entities": [{"start":3, "end":15, "tag":"DOCTOR"}, {"start":43, "end":56, "tag":"DATE"}, {"start":72, "end":85, "tag":"PHONE"}]},
+
+    {"text": "Julia Roberts has an upcoming appointment with Dr. Michael Taylor on August 18, 2023. Call her at (789) 123-4567 to confirm.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":42, "end":56, "tag":"DOCTOR"}, {"start":60, "end":73, "tag":"DATE"}, {"start":89, "end":102, "tag":"PHONE"}]},
+
+    {"text": "After her checkup with Dr. John Anderson on May 5, 2023, Emily Davis can be contacted at (888) 777-2222.",
+     "entities": [{"start":34, "end":46, "tag":"PERSON"}, {"start":62, "end":75, "tag":"DOCTOR"}, {"start":79, "end":92, "tag":"DATE"}, {"start":108, "end":121, "tag":"PHONE"}]},
+
+    {"text": "The test results for Sarah Wilson, ordered by Dr. Linda Harris on July 8, 2023, are available. Contact (444) 111-2222 for details.",
+     "entities": [{"start":19, "end":31, "tag":"PERSON"}, {"start":50, "end":63, "tag":"DOCTOR"}, {"start":67, "end":80, "tag":"DATE"}, {"start":102, "end":115, "tag":"PHONE"}]},
+
+    {"text": "Deepa Mishra, 567 River View, Chennai, 600001.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":27, "tag":"ADDRESS"}, {"start":29, "end":35, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Ravi Kumar, 789 Pine Street, Pune, 411001.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":12, "end":27, "tag":"ADDRESS"}, {"start":29, "end":35, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Neeta Sharma, 321 Oak Avenue, Jaipur, 302001.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":28, "tag":"ADDRESS"}, {"start":30, "end":36, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Sanjay Das, 456 Maple Road, Lucknow, 226001.",
+     "entities": [{"start":0, "end":9, "tag":"PERSON"}, {"start":11, "end":27, "tag":"ADDRESS"}, {"start":29, "end":35, "tag":"POSTAL_CODE"}]},
+
+    {"text": "David Miller's prescription, given by Dr. Susan Jackson on September 9, 2023, can be picked up. His number is (555) 321-9876.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":40, "end":54, "tag":"DOCTOR"}, {"start":60, "end":73, "tag":"DATE"}, {"start":89, "end":102, "tag":"PHONE"}]},
+
+    {"text": "Dr. Richard Turner will be on vacation from July 20 to August 5, 2023. In case of emergencies, contact (777) 555-3333.",
+     "entities": [{"start":3, "end":16, "tag":"DOCTOR"}, {"start":42, "end":55, "tag":"DATE"}, {"start":95, "end":108, "tag":"PHONE"}]},
+
+    {"text": "After her surgery with Dr. Elizabeth Brown on November 12, 2023, Mary Johnson can be reached at (222) 444-6666.",
+     "entities": [{"start":34, "end":46, "tag":"PERSON"}, {"start":64, "end":79, "tag":"DOCTOR"}, {"start":83, "end":96, "tag":"DATE"}, {"start":112, "end":125, "tag":"PHONE"}]},
+
+    {"text": "Dr. Michael Davis's office is closed on December 25, 2023, for the holidays. Call (123) 987-6543 for appointments.",
+     "entities": [{"start":3, "end":17, "tag":"DOCTOR"}, {"start":39, "end":53, "tag":"DATE"}, {"start":85, "end":98, "tag":"PHONE"}]},
+
+    {"text": "Paul Anderson has an appointment with Dr. Susan Smith on October 30, 2023. Confirm at (999) 888-7777.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":44, "end":57, "tag":"DOCTOR"}, {"start":61, "end":74, "tag":"DATE"}, {"start":90, "end":103, "tag":"PHONE"}]},
+
+    {"text": "Anita Singh, 987 Park Lane, Ahmedabad, 380001.",
+     "entities": [{"start":0, "end":10, "tag":"PERSON"}, {"start":12,"end": 28, "tag":"ADDRESS"}, {"start":30, "end":36, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Vikram Mehta, 111 Cedar Street, Chandigarh, 160001.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":14, "end":32, "tag":"ADDRESS"}, {"start":34, "end":40, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Meenakshi Reddy, 222 Forest Avenue, Bhopal, 462001.",
+     "entities": [{"start":0, "end":15, "tag":"PERSON"}, {"start":17, "end":35, "tag":"ADDRESS"}, {"start":37, "end":43, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Rajeshwari Iyer, 345 Elm Lane, Nagpur, 440001.",
+     "entities": [{"start":0, "end":14, "tag":"PERSON"}, {"start":16, "end":29, "tag":"ADDRESS"}, {"start":31, "end":37, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Emily Turner's prescription, provided by Dr. John Harris on August 15, 2023, can be refilled. Her phone is (888) 111-2222.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":47, "end":58, "tag":"DOCTOR"}, {"start":64, "end":77, "tag":"DATE"}, {"start":93, "end":106, "tag":"PHONE"}]},
+
+    {"text": "Dr. Linda Taylor will be on maternity leave from June 1 to September 1, 2023. For coverage, call (555) 777-9999.",
+     "entities": [{"start":3, "end":16, "tag":"DOCTOR"}, {"start":44, "end":59, "tag":"DATE"}, {"start":79, "end":92, "tag":"PHONE"}]},
+
+    {"text": "The test results for Daniel Brown, ordered by Dr. Karen Martinez on May 10, 2023, are ready. Call (333) 666-1111 for information.",
+     "entities": [{"start":19, "end":31, "tag":"PERSON"}, {"start":50, "end":63, "tag":"DOCTOR"}, {"start":67, "end":80, "tag":"DATE"}, {"start":101, "end":114, "tag":"PHONE"}]},
+
+    {"text": "After his appointment with Dr. Richard Adams on July 22, 2023, James Wilson can be contacted at (123) 789-4567.",
+     "entities": [{"start":32, "end":45, "tag":"PERSON"}, {"start":61, "end":75, "tag":"DOCTOR"}, {"start":79, "end":92, "tag":"DATE"}, {"start":108, "end":121, "tag":"PHONE"}]},
+
+    {"text": "Sachin Mehta, 567 Green Road, Lucknow, 226021.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":14, "end":30, "tag":"ADDRESS"}, {"start":32, "end":38, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Nandini Iyer, 890 River View, Bangalore, 560021.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":14, "end":29, "tag":"ADDRESS"}, {"start":31, "end":37, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Sanjay Das, 123 Hillside Avenue, Kolkata, 700021.",
+     "entities": [{"start":0, "end":9, "tag":"PERSON"}, {"start":11, "end":31, "tag":"ADDRESS"}, {"start":33, "end":39, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Dr. Susan Turner's clinic will be closed on November 11, 2023, for Veterans Day. Call (555) 666-4444 for rescheduling.",
+     "entities": [{"start":3, "end":17, "tag":"DOCTOR"}, {"start":45, "end":59, "tag":"DATE"}, {"start":87, "end":100, "tag":"PHONE"}]},
+
+    {"text": "Sophia Smith's upcoming appointment with Dr. David Jackson is on September 5, 2023. Confirm at (777) 888-5555.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":46, "end":60, "tag":"DOCTOR"}, {"start":64, "end":77, "tag":"DATE"}, {"start":93, "end":106, "tag":"PHONE"}]},
+
+    {"text": "Michael Johnson's prescription, given by Dr. Emily Roberts on October 3, 2023, can be refilled. His number is (222) 444-7777.",
+     "entities": [{"start":0, "end":15, "tag":"PERSON"}, {"start":49, "end":62, "tag":"DOCTOR"}, {"start":68, "end":81, "tag":"DATE"}, {"start":97, "end":110, "tag":"PHONE"}]},
+
+    {"text": "Dr. John Davis will be attending a medical conference from July 15 to July 20, 2023. In his absence, contact (123) 555-8888.",
+     "entities": [{"start":3, "end":12, "tag":"DOCTOR"}, {"start":48, "end":61, "tag":"DATE"}, {"start":103, "end":116, "tag":"PHONE"}]},
+
+    {"text": "After her surgery with Dr. Susan Wilson on December 8, 2023, Emma Martinez can be reached at (666) 999-7777.",
+     "entities": [{"start":34, "end":46, "tag":"PERSON"}, {"start":64, "end":78, "tag":"DOCTOR"}, {"start":82, "end":95, "tag":"DATE"}, {"start":111, "end":124, "tag":"PHONE"}]},
+
+    {"text": "Dr. Richard Turner's office will be closed on December 31, 2023, for New Year's Eve. Call (444) 222-5555 for appointments.",
+     "entities": [{"start":3, "end":17, "tag":"DOCTOR"}, {"start":43, "end":57, "tag":"DATE"}, {"start":91, "end":104, "tag":"PHONE"}]},
+
+    {"text": "Harish Joshi, 678 Oak Street, Gurgaon, 122001.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":27, "tag":"ADDRESS"}, {"start":29, "end":35, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Nisha Kapoor, 567 Pine Road, Varanasi, 221001.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":27, "tag":"ADDRESS"}, {"start":29, "end":35, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Amita Sharma, 123 Maple Avenue, Indore, 452001.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":31, "tag":"ADDRESS"}, {"start":33, "end":39, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Rakesh Reddy, 345 Cedar Lane, Coimbatore, 641001.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":14, "end":32, "tag":"ADDRESS"}, {"start":34, "end":40, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Sunita Singh, 678 Pine Road, Surat, 395001.",
+     "entities": [{"start":0, "end":11, "tag":"PERSON"}, {"start":13, "end":27, "tag":"ADDRESS"}, {"start":29, "end":35, "tag":"POSTAL_CODE"}]},
+
+    {"text": "Daniel Harris has an appointment with Dr. Linda Brown on November 5, 2023. Confirm at (999) 333-8888.",
+     "entities": [{"start":0, "end":13, "tag":"PERSON"}, {"start":42, "end":56, "tag":"DOCTOR"}, {"start":60, "end":73, "tag":"DATE"}, {"start":89, "end":102, "tag":"PHONE"}]},
+
+    {"text": "Olivia Adams's prescription, provided by Dr. Michael Anderson on August 10, 2023, can be picked up. Her phone is (789) 123-4567.",
+     "entities": [{"start":0, "end":12, "tag":"PERSON"}, {"start":56, "end":73, "tag":"DOCTOR"}, {"start":79, "end":92, "tag":"DATE"}, {"start":108, "end":121, "tag":"PHONE"}]}
+
+]
+
+}

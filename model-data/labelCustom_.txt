@@ -1,0 +1,15 @@
+Mumbai,	| POSTAL_CODE
+Mr. Rajesh	| DOCTOR
+Dr. Priya	| DOCTOR
+September 10,	| DATE
+Dr. Patel	| DOCTOR
+Gabapentin,	| POSTAL_CODE
+Etoposide,	| POSTAL_CODE
+Hepatitis A.	| POSTAL_CODE
+Apollo Hospitals (	| DATE
+GSTIN	| PERSON
+: 06BZAHM6385P6Z2	| PERSON
+#INV-2023-	| ADDRESS
+Mr. Sharma	| DOCTOR
++91 9876543210. His address,	| ADDRESS
+123 Park Street, South	| ADDRESS
