@@ -1,0 +1,5 @@
+1. Medical NER Dataset | Kaggle | 
+https://www.kaggle.com/datasets/finalepoch/medical-ner
+
+2. Learn How to Build a Custom Named Entity Recognition (NER) model using spacy | Pradip Nichite|
+https://www.youtube.com/watch?v=YLQvVpCXpbU&t=1089s
