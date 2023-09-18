@@ -4,6 +4,7 @@ from ner.lvl1 import CustomNER
 from ner.lvl2 import BasicNER
 from ner.lvl3 import MedicalNER
 from ner.regex import Regex
+from optimization import NER_Checking
 
 
 if __name__ == "__main__":
@@ -17,8 +18,8 @@ if __name__ == "__main__":
 
 
 
-    ocr = OCR("1.png", ".\\sample-data\\")
-    print(ocr())
+    """ocr = OCR("3.jpg", ".\\sample-data\\")
+    print(ocr())"""
 
     ner_basic = BasicNER()
     names, organizations = ner_basic.test(para)
@@ -72,4 +73,24 @@ if __name__ == "__main__":
     print("PHONE1: ", phone)
     print("PHONE2: ", reg.findPhone())
     print("ADDRESS: ", address)
-    print("POSTAL CODE: ", postal_code)
+    print("POSTAL CODE: ", postal_code, "\n\n\n")
+
+    check = NER_Checking()
+    rt = check(names = names, names2 = names2, doctors = reg.findDr(), phones = reg.findPhone(),
+               date = date, address = address, amounts = reg.findRupees(), invoices = reg.findInvoice(),
+               gst = reg.findGST(), org = organizations, medicines = medicine, MedCond = medical_cond,
+               pathogens = pathogens)
+
+    print("NAMES: ", rt['name'])
+    print("DOCTORS: ", rt['doctor'])
+    print("PHONE: ", rt['phone'])
+    print("DATE: ", rt['date'])
+    print("ADDRESS: ", rt['address'])
+    print("RUPEES: ", rt['amount'])
+    print("INVOICE: ", rt['invoice'])
+    print("GST NUMBER: ", rt['gst'])
+    print("ORGANIZATIONS: ", rt['org'])
+    print("MEDICINES: ", rt['medicines'])
+    print("MEDICAL CONDITIONS: ", rt['MedCond'])
+    print("PATHOGENS: ", rt['pathogens'])
+
