@@ -69,8 +69,8 @@ class MedicalNER:
         pass
         # python -m spacy download en_core_web_lg
         # python -m spacy init fill-config base_config.cfg config.cfg
-        # python -m spacy train config.cfg --output ./ --paths.train ./training_dataset/trainMedical.spacy
-        # --paths.dev ./training_dataset/trainMedical.spacy
+        # python -m spacy train config.cfg --output ./ --paths.train ./model-data/trainMedical.spacy
+        # --paths.dev ./model-data/trainMedical.spacy
 
     def test(self, string):
 

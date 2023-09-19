@@ -16,7 +16,7 @@ class FeatureExtractionUsingVGG16:
 
     def __init__(self, path):
         self.path = path
-
+        self.filename = ""
         # Checking for the GPU for faster computation
         print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
         print(tf.test.is_built_with_cuda())
@@ -31,6 +31,8 @@ class FeatureExtractionUsingVGG16:
 
         # Reading the image
         img = Image.open(self.path + filename)
+        self.filename = filename
+
         # Resize the image
         img = img.resize((224, 224))
         # Convert the image color space to RGB
@@ -48,8 +50,8 @@ class FeatureExtractionUsingVGG16:
 
     def saveFeatures(self, features):
         # Save the Numpy array (.npy) on designated path
-        np.save(self.path + 'VGG16_features1_.npy', features)
-        print("Features successfully extracted, and stored at " + self.path + 'VGG16_features_.npy' + "...\n")
+        np.save(self.path + 'VGG16_features1_' + self.filename[0:-4] + '.npy', features)
+        print("VGG16 Features successfully extracted, and stored at " + self.path + 'VGG16_features1_' + self.filename[0:-4] + '.npy' + "...\n")
 
     def __call__(self, *args, **kwargs):
         feat = self.extract(kwargs["filename"])

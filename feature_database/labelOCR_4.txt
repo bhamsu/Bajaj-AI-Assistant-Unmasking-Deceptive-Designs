@@ -1,0 +1,79 @@
+DOCTOR / PHYSICIAN
+
+Bajaj Finserv Project Sample #3
+
+INVOICE
+
+Bill To
+
+Invoice #
+
+Amount Due
+
+INV-2023-9941 1
+
+Harshat Singha
+
+Rs.1510.00
+
+87 Tulsi Street,
+
+Issue Date
+
+Varanasi,
+
+31/03/2023
+
+Uttar Pradesh - 221001
+
+Description
+
+Qty / Pcs
+
+Price / Rate
+
+Amount
+
+Gabapentin
+
+Rs. 1250.00
+
+Rs. 1200.00
+
+Allegra 500
+
+Rs.190.00
+
+Rs. 150.00
+
+For allergies
+
+Paracetamol 650
+
+Rs. 160
+
+Rs. 150
+
+Payment Method(s): UPI
+
+Subtotal
+
+Rs.1500.00
+
+Tax
+
+Rs. 10.00
+
+Payment Link(s):
+
+Misc.
+
+-
+
+Notes:
+
+Amount Due
+
+Rs.1510.00
+
+G Brought to you for free by OpenDocs.com

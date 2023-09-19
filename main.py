@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
 
 
-    """ocr = OCR("3.jpg", ".\\sample-data\\")
+    """ocr = OCR("1.png", ".\\sample-data\\")
     print(ocr())"""
 
     ner_basic = BasicNER()
@@ -26,6 +26,7 @@ if __name__ == "__main__":
 
     ner_medical = MedicalNER(".\\model-data\\")
     medical_ner_rslt = ner_medical.test(para)
+
     medicine = []
     medical_cond = []
     pathogens = []
@@ -37,10 +38,15 @@ if __name__ == "__main__":
         if ent.label_ == "PATHOGEN":
             pathogens.append(ent.text)
 
-
     ner_custom = CustomNER(".\\model-data\\")
     custom_ner_rslt = ner_custom.test(para)
-    names2 = []; doctor = []; date = []; phone = []; address = []; postal_code = []
+
+    names2 = []
+    doctor = []
+    date = []
+    phone = []
+    address = []
+    postal_code = []
     for ent in custom_ner_rslt.ents:
         if ent.label_ == "PERSON":
             names2.append(ent.text)
@@ -56,7 +62,6 @@ if __name__ == "__main__":
             postal_code.append(ent.text)
 
     reg = Regex(para)
-
 
     print("NAMES: ", names)
     print("NAMES2: ", names2)
@@ -74,6 +79,7 @@ if __name__ == "__main__":
     print("PHONE2: ", reg.findPhone())
     print("ADDRESS: ", address)
     print("POSTAL CODE: ", postal_code, "\n\n\n")
+
 
     check = NER_Checking()
     rt = check(names = names, names2 = names2, doctors = reg.findDr(), phones = reg.findPhone(),
@@ -93,4 +99,5 @@ if __name__ == "__main__":
     print("MEDICINES: ", rt['medicines'])
     print("MEDICAL CONDITIONS: ", rt['MedCond'])
     print("PATHOGENS: ", rt['pathogens'])
+
 

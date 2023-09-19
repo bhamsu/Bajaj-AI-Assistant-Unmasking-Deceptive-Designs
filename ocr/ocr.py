@@ -188,14 +188,16 @@ class OCR:
     def ocr(self, img):
 
         text = image_to_string(img, config = self.myconfig)
-        text_file = open(self.path + "labelOCR_.txt", "w")
+        text_file = open(self.path + "labelOCR_" + self.filename[0:-4] + ".txt", "w")
         text_file.write(text)
         text_file.close()
+        print("OCR extracted string from image, and stored at " + self.path + "labelOCR_" + self.filename[0:-4] + ".txt" + "...\n")
+
         return text
 
     def __call__(self, *args, **kwargs):
 
-        self.inverted_images()
+        # self.inverted_images()
         gray_im = self.grayscale()
         im_bw = self.binarization(gray_im)
         no_noise_im = self.noise_removal(im_bw)

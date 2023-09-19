@@ -14,6 +14,7 @@ class FeatureExtractionUsingFasterRCNN:
 
         # self.model = None
         self.path = path
+        self.filename = ""
         # Load the pre-trained ResNet-50 model (feature extraction backbone)
         # self.backbone = torchvision.models.resnet50(pretrained = True)
         self.backbone = torchvision.models.resnet50(weights = None)
@@ -77,6 +78,7 @@ class FeatureExtractionUsingFasterRCNN:
 
         # Load an image
         image = Image.open(self.path + filename).convert('RGB')
+        self.filename = filename
 
         # Preprocess the image
         image_tensor = functional.to_tensor(image)
@@ -97,8 +99,8 @@ class FeatureExtractionUsingFasterRCNN:
         features_np = features.cpu().numpy()
 
         # Save the NumPy array to a file
-        np.save(self.path + 'FasterRCNN_features_.npy', features_np)
-        print("Features successfully extracted, and stored at " + self.path + 'FasterRCNN_features_.npy' + "...\n")
+        np.save(self.path + 'FasterRCNN_features_' + self.filename[0:-4] + '.npy', features_np)
+        print("Faster R-CNN Features successfully extracted, and stored at " + self.path + 'FasterRCNN_features_' + self.filename[0:-4] + '.npy' + "...\n")
 
     def __call__(self, *args, **kwargs):
         self.model()

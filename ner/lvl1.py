@@ -72,8 +72,8 @@ class CustomNER:
         pass
         # python -m spacy download en_core_web_lg
         # python -m spacy init fill-config base_config.cfg config.cfg
-        # python -m spacy train config.cfg --output ./ --paths.train ./training_dataset/trainBasic.spacy
-        # --paths.dev ./training_dataset/trainBasic.spacy
+        # python -m spacy train config.cfg --output ./ --paths.train ./model-data/trainCustom.spacy
+        # --paths.dev ./model-data/trainCustom.spacy
 
     def test(self, string):
 
