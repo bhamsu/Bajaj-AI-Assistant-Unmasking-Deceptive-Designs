@@ -71,15 +71,15 @@ if __name__ == "__main__":
     check.__del__()
 
     # Printing the extracted & filtered entities
-    print("NAMES: ", rt['name'])
-    print("DOCTORS: ", rt['doctor'])
+    print("NAME: ", rt['name'])
+    print("DOCTOR: ", rt['doctor'])
     print("PHONE: ", rt['phone'])
     print("DATE: ", rt['date'])
     print("ADDRESS: ", rt['address'])
     print("RUPEES: ", rt['amount'])
     print("INVOICE: ", rt['invoice'])
     print("GST NUMBER: ", rt['gst'])
-    print("ORGANIZATIONS: ", rt['org'])
+    print("ORGANIZATION: ", rt['org'])
     print("MEDICINES: ", rt['medicines'])
     print("MEDICAL CONDITIONS: ", rt['MedCond'])
     print("PATHOGENS: ", rt['pathogens'])
