@@ -2,3 +2,4 @@ model-data/model-best-custom/vocab/vectors filter=lfs diff=lfs merge=lfs -text
 model-data/model-best-medical/vocab/vectors filter=lfs diff=lfs merge=lfs -text
 model-data/model-last-custom/vocab/vectors filter=lfs diff=lfs merge=lfs -text
 model-data/model-last-medical/vocab/vectors filter=lfs diff=lfs merge=lfs -text
+feature_database filter=lfs diff=lfs merge=lfs -text
