@@ -18,9 +18,10 @@ class CosineSimilarity:
 
             # Calculate cosine similarity
             similarity = cosine_similarity(vectors[0].reshape(1, -1), vectors[1].reshape(1, -1))
-        elif img:
-            similarity = cosine_similarity(attr1.reshape(1, -1), attr2.reshape(1, -1))
 
+        elif img:
+            # similarity = cosine_similarity(attr1.reshape(1, -1), attr2.reshape(1, -1))
+            similarity = cosine_similarity(attr1, attr2)
         try:
             # Convert similarity score to percentage
             similarity_percentage = similarity[0][0] * 100

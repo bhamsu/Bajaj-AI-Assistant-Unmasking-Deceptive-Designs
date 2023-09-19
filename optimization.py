@@ -150,13 +150,22 @@ class NER_Checking:
             self.finalEntity['amount'] = kwargs['amounts'][0]
 
         # Invoice Number
-        self.finalEntity['invoice'] = self.is_valid_invoice(kwargs['invoices'])
+        if len(kwargs['invoices']) > 1:
+            self.finalEntity['invoice'] = self.is_valid_invoice(kwargs['invoices'])
+        else:
+            self.finalEntity['invoice'] = kwargs['invoices'][0]
 
         # GST Number
-        self.finalEntity['gst'] = self.is_valid_gst(kwargs['gst'])
+        if len(kwargs['gst']) > 1 or kwargs['gst']:
+            self.finalEntity['gst'] = self.is_valid_gst(kwargs['gst'])
+        else:
+            self.finalEntity['gst'] = kwargs['gst']
 
         # Organizations
-        self.finalEntity['org'] = list(set(kwargs['org']))[0]
+        if len(kwargs['org']) > 1:
+            self.finalEntity['org'] = list(set(kwargs['org']))[0]
+        else:
+            self.finalEntity['org'] = kwargs['org']
 
         # Medicines, Medical Conditions & Pathogens
         for med in kwargs['medicines']:
@@ -172,6 +181,7 @@ class NER_Checking:
             self.finalEntity['MedCond'] = kwargs['MedCond']
         self.finalEntity['pathogens'] = [pathogen for pathogen in kwargs['pathogens'] if not pathogen.isnumeric()]
 
-
-
         return self.finalEntity
+
+    def __del__(self):
+        pass

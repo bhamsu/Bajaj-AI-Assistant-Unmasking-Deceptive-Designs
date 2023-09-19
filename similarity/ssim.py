@@ -12,7 +12,7 @@ class StructuralSimilarityIndex:
         self.img1 = img1
         self.img2 = img2
 
-        (score, diff) = structural_similarity(self.img1, self.img2, data_range = 1, full = True)
+        score, diff = structural_similarity(self.img1.reshape(1, -1), self.img2.reshape(1, -1), data_range = 1, full = True, gaussian_weights = False, use_sample_covariance = False)
         return score * 100
 
     def __call__(self, *args, **kwargs):

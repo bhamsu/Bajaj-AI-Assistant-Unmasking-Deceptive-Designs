@@ -1,0 +1,63 @@
+Apollo Hospitals
+
+INVOIC
+
+Dr. Priya Patel
+
+E
+
+September 10,
+
+2023
+
+#INV-2023-12345
+
+< Payment terms (due on receipt, due in X days)>
+
+BILL TO
+
+Akash Singh Rajput
+
+123 Park Street,
+
+South Mumbai
+
++91 9876543210
+
+DESCRIPTION
+
+QTY
+
+UNIFP PRICE
+
+TOTAL
+
+100.00
+
+Acetaminophen
+
+200.00
+
+Gabapentin
+
+Etoposide
+
+50.00
+
+Paracetamol
+
+SUBTOTAL
+
+350.00
+
+Remarks / Payment Instructions:
+
+Rs 350.00
+
+SUBTOTAL LESS
+
+0.00
+
+DISCOUNT
+
+eeeeereer—C“ ts’

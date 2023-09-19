@@ -6,10 +6,11 @@ from pytesseract import image_to_string
 
 class OCR:
 
-    def __init__(self, filename, path):
+    def __init__(self, filename, path, flag = False):
         self.myconfig = r"--psm 11 --oem 3"
         self.filename = filename
         self.path = path
+        self.flag = flag
         # self.img = Image.open(self.path + self.filename)
 
         # Checking if any error occur during reading the images
@@ -21,20 +22,26 @@ class OCR:
 
     def inverted_images(self):
         inverted_image = cv2.bitwise_not(self.img)
-        cv2.imwrite(self.path + "inverted_.png", inverted_image)
-        # self.display(inverted_image)
+
+        if self.flag:
+            cv2.imwrite(self.path + "inverted_.png", inverted_image)
+            # self.display(inverted_image)
         return inverted_image
 
     def grayscale(self):
         gray_image = cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY)
-        cv2.imwrite(self.path + "gray_.png", gray_image)
-        # self.display(gray_image)
+
+        if self.flag:
+            cv2.imwrite(self.path + "gray_.png", gray_image)
+            # self.display(gray_image)
         return gray_image
 
     def binarization(self, gray_im):
         thresh, im_bw = cv2.threshold(gray_im, 200, 230, cv2.THRESH_BINARY)
-        cv2.imwrite(self.path + "binary_.png", im_bw)
-        # self.display(im_bw)
+
+        if self.flag:
+            cv2.imwrite(self.path + "binary_.png", im_bw)
+            # self.display(im_bw)
         return im_bw
 
     def noise_removal(self, image):
@@ -45,8 +52,9 @@ class OCR:
         nr_image = cv2.morphologyEx(nr_image, cv2.MORPH_CLOSE, kernel)
         nr_image = cv2.medianBlur(nr_image, 3)
 
-        cv2.imwrite(self.path + "no_noise_.png", nr_image)
-        # self.display(nr_image)
+        if self.flag:
+            cv2.imwrite(self.path + "no_noise_.png", nr_image)
+            # self.display(nr_image)
         return nr_image
 
     def thin_font(self, image):
@@ -56,8 +64,9 @@ class OCR:
         thin_font_im = cv2.erode(thin_font_im, kernel, iterations = 1)
         thin_font_im = cv2.bitwise_not(thin_font_im)
 
-        cv2.imwrite(self.path + "thin_font_.png", thin_font_im)
-        # self.display(thin_font_im)
+        if self.flag:
+            cv2.imwrite(self.path + "thin_font_.png", thin_font_im)
+            # self.display(thin_font_im)
         return thin_font_im
 
     def thick_font(self, image):
@@ -67,8 +76,9 @@ class OCR:
         thick_font_im = cv2.dilate(thick_font_im, kernel, iterations = 1)
         thick_font_im = cv2.bitwise_not(thick_font_im)
 
-        cv2.imwrite(self.path + "thick_font_.png", thick_font_im)
-        # self.display(thick_font_im)
+        if self.flag:
+            cv2.imwrite(self.path + "thick_font_.png", thick_font_im)
+            # self.display(thick_font_im)
         return thick_font_im
 
     def getSkewAngle(self, cvImage) -> float:
@@ -96,7 +106,9 @@ class OCR:
         largestContour = contours[0]
         print(len(contours))
         minAreaRect = cv2.minAreaRect(largestContour)
-        cv2.imwrite(self.path + "skewed_.png", newImage)
+
+        if self.flag:
+            cv2.imwrite(self.path + "skewed_.png", newImage)
 
         # Determine the angle. Convert it to the value that was originally used to obtain skewed image
         angle = minAreaRect[-1]
@@ -119,8 +131,9 @@ class OCR:
         angle = self.getSkewAngle(cvImage)
         rotate_im = self.rotateImage(cvImage, -1.0 * angle)
 
-        cv2.imwrite(self.path + "rotated_fixed_.png", rotate_im)
-        # self.display(rotate_im)
+        if self.flag:
+            cv2.imwrite(self.path + "rotated_fixed_.png", rotate_im)
+            # self.display(rotate_im)
         return rotate_im
 
 
@@ -131,8 +144,9 @@ class OCR:
         x, y, w, h = cv2.boundingRect(cnt)
         crop = no_noise_im[y:y + h, x:x + w]
 
-        cv2.imwrite(self.path + "no_borders_.png", crop)
-        # self.display(crop)
+        if self.flag:
+            cv2.imwrite(self.path + "no_borders_.png", crop)
+            # self.display(crop)
         return crop
 
     def remove_footnotes(self, image):
@@ -160,8 +174,9 @@ class OCR:
                 roi = base_image[0:y + h, 0:x + im_w]
                 cv2.rectangle(image, (x, y), (x + w, y + h), (36, 255, 12), 2)
 
-        cv2.imwrite(self.path + "no_footnotes_.png" , roi)
-        # self.display(roi)
+        if self.flag:
+            cv2.imwrite(self.path + "no_footnotes_.png" , roi)
+            # self.display(roi)
         return roi
 
     @staticmethod

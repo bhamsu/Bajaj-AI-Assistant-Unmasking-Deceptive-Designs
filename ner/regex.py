@@ -43,7 +43,7 @@ class Regex:
         # If found any invoice number, then returns the list, otherwise 0
         if len(invoice_numbers) > 0:
             return invoice_numbers
-        return 0
+        return []
 
     def findGST(self):
 
@@ -56,7 +56,7 @@ class Regex:
         # If found any gst number, then returns the list, otherwise 0
         if len(gst_numbers) > 0:
             return gst_numbers
-        return 0
+        return []
 
     def findDr(self):
 
@@ -69,7 +69,7 @@ class Regex:
         # If found any Doctor, then returns the list, otherwise 0
         if len(dr_names) > 0:
             return dr_names
-        return 0
+        return []
 
     def findRupees(self):
 
@@ -82,7 +82,7 @@ class Regex:
         # If found any rupees, then returns the max element from the list, otherwise 0
         if len(rupee_amounts) > 0:
             return rupee_amounts
-        return 0
+        return []
 
     def __call__(self, *args, **kwargs):
         pass

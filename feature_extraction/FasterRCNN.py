@@ -105,7 +105,8 @@ class FeatureExtractionUsingFasterRCNN:
     def __call__(self, *args, **kwargs):
         self.model()
         feature = self.extract(kwargs['filename'])
-        self.saveFeatures(feature)
+        # self.saveFeatures(feature)
+        return feature
 
     def __del__(self):
         pass
