@@ -92,6 +92,7 @@ if __name__ == "__main__":
                gst = reg.findGST(), org = organizations, medicines = medicine, MedCond = medical_cond,
                pathogens = pathogens)
 
+    # Deleting the objects created
     ner_basic.__del__()
     ner_medical.__del__()
     ner_custom.__del__()
@@ -128,8 +129,8 @@ if __name__ == "__main__":
                        rupees = rt['amount'], invoice = rt['invoice'], gst = rt['gst'],
                        org = rt['org'], med = rt['medicines'], medCond = rt['MedCond'],
                        pathogens = rt['pathogens'], fraudColor = col)
-    print("Extracted entities of file ", filenameEncy, " is again stored in MongoDB...")
     mongo.__del__()
+    print("Extracted entities of file ", filenameEncy, " is again stored in MongoDB...")
 
 
 
