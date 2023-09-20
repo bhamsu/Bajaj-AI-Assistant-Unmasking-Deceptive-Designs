@@ -29,8 +29,9 @@ class Regex:
 
         # If found any phone number, then returns the list, otherwise 0
         if len(phone_numbers) > 0:
+            print("Regex called, and it has returned the extracted Phone No...")
             return phone_numbers
-        return 0
+        return []
 
     def findInvoice(self):
 
@@ -42,6 +43,7 @@ class Regex:
 
         # If found any invoice number, then returns the list, otherwise 0
         if len(invoice_numbers) > 0:
+            print("Regex called, and it has returned the extracted Invoice No...")
             return invoice_numbers
         return []
 
@@ -55,6 +57,7 @@ class Regex:
 
         # If found any gst number, then returns the list, otherwise 0
         if len(gst_numbers) > 0:
+            print("Regex called, and it has returned the extracted GST No...")
             return gst_numbers
         return []
 
@@ -68,6 +71,7 @@ class Regex:
 
         # If found any Doctor, then returns the list, otherwise 0
         if len(dr_names) > 0:
+            print("Regex called, and it has returned the extracted Doctors Name...")
             return dr_names
         return []
 
@@ -81,6 +85,7 @@ class Regex:
 
         # If found any rupees, then returns the max element from the list, otherwise 0
         if len(rupee_amounts) > 0:
+            print("Regex called, and it has returned the extracted Amount (in Rs.)...")
             return rupee_amounts
         return []
 

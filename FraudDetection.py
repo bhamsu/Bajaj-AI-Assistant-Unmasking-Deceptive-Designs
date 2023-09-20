@@ -2,7 +2,6 @@
 from MatchingAlgorithm import Matching
 from feature_extraction.FasterRCNN import FeatureExtractionUsingFasterRCNN
 
-
 class FraudDetection:
 
     def __init__(self, text, img, path):
@@ -13,6 +12,7 @@ class FraudDetection:
         # Setting the threshold values for detecting potential or suspicious frauds
         self.amber_threshold = 70   # Suspicion Threshold
         self.red_threshold = 83     # Potential Fraud
+        print("Fraud Detection started...")
 
     def detection(self):
 
@@ -38,6 +38,10 @@ class FraudDetection:
             return score, "amber"
         elif str_score > self.red_threshold:
             return score, "red"
+        else:
+            print("EXCEPTION: NO CONDITION SATISFIED.")
+
+        print("Fraud Detection ended...")
 
     def __del__(self):
         pass

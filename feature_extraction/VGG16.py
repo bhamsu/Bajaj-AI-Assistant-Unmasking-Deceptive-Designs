@@ -55,7 +55,9 @@ class FeatureExtractionUsingVGG16:
 
     def __call__(self, *args, **kwargs):
         feat = self.extract(kwargs["filename"])
-        self.saveFeatures(feat)
+        print("Feature extracted from image using Faster R-CNN...")
+        # self.saveFeatures(feat)
+        return feat
 
     def __del__(self):
         pass

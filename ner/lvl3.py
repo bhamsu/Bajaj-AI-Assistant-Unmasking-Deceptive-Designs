@@ -82,7 +82,8 @@ class MedicalNER:
         with open(self.filepath + "labelMedical_.txt", "w") as fp:
             for ent in doc.ents:
                 fp.write(ent.text + "\t| " + ent.label_ + "\n")
-                # print(ent.text, "\t\t| ", ent.label_)
+
+        print("Medical NER called, and it has returned the extracted values...")
         return doc
 
     def __call__(self, *args, **kwargs):

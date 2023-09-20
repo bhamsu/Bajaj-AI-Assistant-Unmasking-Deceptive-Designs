@@ -206,7 +206,7 @@ class OCR:
         text_file = open(self.path + "labelOCR_" + self.filename[0:-4] + ".txt", "w")
         text_file.write(text)
         text_file.close()
-        print("OCR extracted string from image, and stored at " + self.path + "labelOCR_" + self.filename[0:-4] + ".txt" + "...\n")
+        print("OCR extracted string from image, and stored at " + self.path + "labelOCR_" + self.filename[0:-4] + ".txt" + "...")
 
         return text
 
@@ -220,7 +220,10 @@ class OCR:
         no_border_im = self.remove_borders(th_fn_im)
         # self.deskew(self.img)
         # self.remove_footnotes(null)
-        return self.ocr(no_border_im)
+
+        text = self.ocr(no_border_im)
+        text = text.replace("\n", " ")
+        return text
 
     def __del__(self):
         pass

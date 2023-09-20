@@ -85,7 +85,8 @@ class CustomNER:
         with open(self.filepath + "labelCustom_.txt", "w") as fp:
             for ent in doc.ents:
                 fp.write(ent.text + "\t| " + ent.label_ + "\n")
-                # print(ent.text, "\t\t| ", ent.label_)
+
+        print("Custom NER called, and it has returned the extracted values...")
         return doc
 
     def __call__(self, *args, **kwargs):

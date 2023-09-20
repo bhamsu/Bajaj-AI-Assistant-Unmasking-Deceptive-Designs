@@ -181,6 +181,7 @@ class NER_Checking:
             self.finalEntity['MedCond'] = kwargs['MedCond']
         self.finalEntity['pathogens'] = [pathogen for pathogen in kwargs['pathogens'] if not pathogen.isnumeric()]
 
+        print("NER Filtering Algorithm called, and it has returned the single most valuable extracted entities...")
         return self.finalEntity
 
     def __del__(self):

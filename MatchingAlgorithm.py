@@ -10,13 +10,13 @@ class Matching:
 
     def __init__(self, path = ".\\feature_database\\"):
         self.path = path
+        print("Matching Algorithm started...")
 
     def readDir(self):
         txt_files = [f for f in os.listdir(self.path) if f.endswith('.txt')]
         npy_files = [f for f in os.listdir(self.path) if f.endswith('.npy') and f.startswith("FasterRCNN")]
 
         # print(npy_files, txt_files)
-
         return txt_files, npy_files
 
     def StringMatch(self, strFt, txt_files):
@@ -28,6 +28,7 @@ class Matching:
                 if score > max_Score:
                     max_Score = score
                 # score.__del__()
+        print("String Matching Done.")
         return max_Score
 
     def FeatureMatching(self, imgFt, npy_files):
@@ -40,16 +41,18 @@ class Matching:
             if score > max_Score:
                 max_Score = score
             # score.__del__()
+        print("Image Feature Matching Done.")
         return max_Score
 
     def __call__(self, *args, **kwargs):
 
         txt_files, npy_files = self.readDir()
 
-        str_Score = self.StringMatch(kwargs['strFt'], txt_files)
         img_Score = 0
+        str_Score = self.StringMatch(kwargs['strFt'], txt_files)
         # img_Score = self.FeatureMatching(kwargs['imgFt'], npy_files)
 
+        print("Matching Algorithm ended...")
         return str_Score, img_Score
 
     def __del__(self):

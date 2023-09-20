@@ -100,11 +100,12 @@ class FeatureExtractionUsingFasterRCNN:
 
         # Save the NumPy array to a file
         np.save(self.path + 'FasterRCNN_features_' + self.filename[0:-4] + '.npy', features_np)
-        print("Faster R-CNN Features successfully extracted, and stored at " + self.path + 'FasterRCNN_features_' + self.filename[0:-4] + '.npy' + "...\n")
+        print("Faster R-CNN Features successfully extracted, and stored at " + self.path + 'FasterRCNN_features_' + self.filename[0:-4] + '.npy' + "...")
 
     def __call__(self, *args, **kwargs):
         self.model()
         feature = self.extract(kwargs['filename'])
+        print("Feature extracted from image using Faster R-CNN...")
         # self.saveFeatures(feature)
         return feature
 

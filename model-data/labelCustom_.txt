@@ -1,13 +1,13 @@
-INVOIC  Dr. Priya	| DOCTOR
+Dr. Priya	| DOCTOR
 September 10,	| DATE
+#INV-2023-  12345  	| DOCTOR
 )>  	| PHONE
 Akash	| PERSON
 Singh	| PERSON
 123 Park Street,	| ADDRESS
 +91 9876543210  DESCRIPTION	| ADDRESS
-QTY  	| PERSON
-Acetaminophen  	| PERSON
-Gabapentin  Etoposide  	| DOCTOR
-Paracetamol  	| POSTAL_CODE
+Gabapentin  	| DOCTOR
+50.00	| PERSON
+Etoposide  	| POSTAL_CODE
 SUBTOTAL  	| DOCTOR
 Rs	| PERSON

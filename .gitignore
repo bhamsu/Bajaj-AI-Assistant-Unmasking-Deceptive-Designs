@@ -2,3 +2,5 @@
 model-data/model-best-custom/vocab/vectors
 model-data/model-best-medical/vocab/vectors
 .idea/
+fromServer
+feature_database

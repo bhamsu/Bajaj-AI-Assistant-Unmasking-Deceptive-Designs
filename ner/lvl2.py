@@ -23,6 +23,7 @@ class BasicNER:
                 names.append(ent.text)
             elif ent.label_ == "ORG":
                 organizations.append(ent.text)
+        print("Basic NER called, and it has returned the extracted values...")
 
         # Print the extracted names and organizations
         # print("Names:", names)
