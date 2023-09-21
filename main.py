@@ -23,6 +23,7 @@ if __name__ == "__main__":
     # Accessing MongoDB & extracting data from it
     source = "..\\server\\fileUpload\\"
     destination = ".\\fromServer\\"
+    # filenameEncy = ""
 
     mongo = MongoDB()
     data = mongo.getData()
@@ -37,6 +38,7 @@ if __name__ == "__main__":
     print("File uploaded in server is stored in ", destination + img, "...")
 
     # Converting pdf to jpg
+    # img = "ex3_1.pdf"
     pages = convert_from_path(destination + img)
     pages[0].save(path + img[0:-4] + '.jpg', 'JPEG')
     print("The input file is converted into .jpg and stored at ", path + img[0:-4] + '.jpg', "...")
@@ -117,8 +119,8 @@ if __name__ == "__main__":
 
     # Fraud Detection, which return flag colours as per the risk value
     frd = FraudDetection(text, img, path)
-    scr, col = frd()
-    print("Similarity Score : ", scr)
+    col = frd()
+    # print("Similarity Score : ", scr)
     print("Flag Colour : ", col)
     frd.__del__()
 

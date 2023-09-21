@@ -123,23 +123,23 @@ class NER_Checking:
         if len(kwargs['doctors']) > 1:
             self.finalEntity['doctor'] = self.is_valid_doctor(kwargs['doctors'])
         else:
-            self.finalEntity['doctor'] = kwargs['doctors'][0]
+            self.finalEntity['doctor'] = kwargs['doctors']
 
         # Phone Number
         if len(kwargs['phones']) > 1:
             self.finalEntity['phone'] = self.is_valid_phone(kwargs['phones'])
         else:
-            self.finalEntity['phone'] = kwargs['phones'][0]
+            self.finalEntity['phone'] = kwargs['phones']
 
         # Date
         if len(kwargs['date']) > 1:
             self.finalEntity['date'] = self.is_valid_date(kwargs['date'])[0]
         else:
-            self.finalEntity['date'] = kwargs['date'][0]
+            self.finalEntity['date'] = kwargs['date']
 
         # Address
         if len(kwargs['address']) > 1:
-            self.finalEntity['address'] = self.is_valid_address(self.is_any_specialChar(kwargs['address']))[0]
+            self.finalEntity['address'] = self.is_valid_address(self.is_any_specialChar(kwargs['address']))
         else:
             self.finalEntity['address'] = kwargs['address']
 
@@ -147,13 +147,13 @@ class NER_Checking:
         if len(kwargs['amounts']) > 1:
             self.finalEntity['amount'] = self.is_valid_amount(kwargs['amounts'])
         else:
-            self.finalEntity['amount'] = kwargs['amounts'][0]
+            self.finalEntity['amount'] = kwargs['amounts']
 
         # Invoice Number
         if len(kwargs['invoices']) > 1:
             self.finalEntity['invoice'] = self.is_valid_invoice(kwargs['invoices'])
         else:
-            self.finalEntity['invoice'] = kwargs['invoices'][0]
+            self.finalEntity['invoice'] = kwargs['invoices']
 
         # GST Number
         if len(kwargs['gst']) > 1 or kwargs['gst']:

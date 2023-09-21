@@ -203,10 +203,11 @@ class OCR:
     def ocr(self, img):
 
         text = image_to_string(img, config = self.myconfig)
-        text_file = open(self.path + "labelOCR_" + self.filename[0:-4] + ".txt", "w")
-        text_file.write(text)
-        text_file.close()
-        print("OCR extracted string from image, and stored at " + self.path + "labelOCR_" + self.filename[0:-4] + ".txt" + "...")
+        text = text.replace("\n", " ")
+        # text_file = open(self.path + "labelOCR_" + self.filename[0:-4] + ".txt", "w")
+        # text_file.write(text)
+        # text_file.close()
+        # print("OCR extracted string from image, and stored at " + self.path + "labelOCR_" + self.filename[0:-4] + ".txt" + "...")
 
         return text
 

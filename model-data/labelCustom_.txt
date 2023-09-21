@@ -1,13 +1,15 @@
+Priya	| PERSON
+Mumbai,	| POSTAL_CODE
+Maharashtra -	| POSTAL_CODE
+#INV-2023-	| ADDRESS
+Pes  Price	| DATE
+(Rs.	| PHONE
+)  Amount	| DATE
+(Rs.	| PHONE
+)  Gabapentin  2250.00  	| PHONE
+60.00  60.00  Payment	| PHONE
+Method(s):	| POSTAL_CODE
+Subtotal  	| POSTAL_CODE
+):  Misc.	| ADDRESS
+:  	| DOCTOR
 Dr. Priya	| DOCTOR
-September 10,	| DATE
-#INV-2023-  12345  	| DOCTOR
-)>  	| PHONE
-Akash	| PERSON
-Singh	| PERSON
-123 Park Street,	| ADDRESS
-+91 9876543210  DESCRIPTION	| ADDRESS
-Gabapentin  	| DOCTOR
-50.00	| PERSON
-Etoposide  	| POSTAL_CODE
-SUBTOTAL  	| DOCTOR
-Rs	| PERSON

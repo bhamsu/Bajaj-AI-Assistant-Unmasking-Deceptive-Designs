@@ -51,7 +51,7 @@ class FeatureExtractionUsingVGG16:
     def saveFeatures(self, features):
         # Save the Numpy array (.npy) on designated path
         np.save(self.path + 'VGG16_features1_' + self.filename[0:-4] + '.npy', features)
-        print("VGG16 Features successfully extracted, and stored at " + self.path + 'VGG16_features1_' + self.filename[0:-4] + '.npy' + "...\n")
+        print("VGG16 Features successfully extracted, and stored at " + self.path + 'VGG16_features_' + self.filename[0:-4] + '.npy' + "...\n")
 
     def __call__(self, *args, **kwargs):
         feat = self.extract(kwargs["filename"])

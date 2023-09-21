@@ -14,7 +14,7 @@ class Matching:
 
     def readDir(self):
         txt_files = [f for f in os.listdir(self.path) if f.endswith('.txt')]
-        npy_files = [f for f in os.listdir(self.path) if f.endswith('.npy') and f.startswith("FasterRCNN")]
+        npy_files = [f for f in os.listdir(self.path) if f.endswith('.npy') and f.startswith("VGG16")]
 
         # print(npy_files, txt_files)
         return txt_files, npy_files
@@ -37,7 +37,7 @@ class Matching:
         for file in npy_files:
             fp = np.load(self.path + file)
             # score = (CosineSimilarity().score(imgFt, fp, img = True) + StructuralSimilarityIndex().score(imgFt, fp)) / 2
-            score = StructuralSimilarityIndex().score(imgFt, fp)
+            score = StructuralSimilarityIndex().score(imgFt, fp, 'VGG16')
             if score > max_Score:
                 max_Score = score
             # score.__del__()
@@ -48,9 +48,9 @@ class Matching:
 
         txt_files, npy_files = self.readDir()
 
-        img_Score = 0
+        # img_Score = 0
         str_Score = self.StringMatch(kwargs['strFt'], txt_files)
-        # img_Score = self.FeatureMatching(kwargs['imgFt'], npy_files)
+        img_Score = self.FeatureMatching(kwargs['imgFt'], npy_files)
 
         print("Matching Algorithm ended...")
         return str_Score, img_Score

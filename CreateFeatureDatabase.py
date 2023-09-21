@@ -1,14 +1,15 @@
 # Importing all our own modules for integration
 from feature_extraction.FasterRCNN import FeatureExtractionUsingFasterRCNN
 from feature_extraction.VGG16 import FeatureExtractionUsingVGG16
+import os
 
-images = ['1.png', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
 path = ".\\feature_database\\"
+images = [f for f in os.listdir(path) if f.endswith('.jpg')]
 
-for img in images:
+"""for img in images:
     fe = FeatureExtractionUsingFasterRCNN(path)
     fe(filename = img)
-    fe.__del__()
+    fe.__del__()"""
 
 for img in images:
     fe = FeatureExtractionUsingVGG16(path)

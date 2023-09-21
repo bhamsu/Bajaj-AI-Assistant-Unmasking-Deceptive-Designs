@@ -53,6 +53,3 @@ class MongoDB:
         print("MongoDB database connection lost...")
 
 
-# mn = MongoDB()
-# print(mn.getData().get('filePath')[11:])
-
